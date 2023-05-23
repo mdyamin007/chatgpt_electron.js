@@ -3,8 +3,8 @@ const path = require('path')
 
 function createWindow () {
   const win = new BrowserWindow({
-    width: 500,
-    height: 600,
+    width: 600,
+    height: 800,
     icon: path.join(__dirname, 'assets/ChatGPT.png'),
     webPreferences: {
         nodeIntegration: false,
@@ -12,7 +12,7 @@ function createWindow () {
         sandbox: true
     }
   })
-
+  
   win.loadURL("https://chat.openai.com")
 }
 
